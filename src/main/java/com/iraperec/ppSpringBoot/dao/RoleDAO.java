@@ -2,7 +2,6 @@ package com.iraperec.ppSpringBoot.dao;
 
 
 import com.iraperec.ppSpringBoot.model.Role;
-import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 

@@ -30,6 +30,8 @@ public class DBInitialization {
         User admin = new User();
         admin.setUsername("admin");
         admin.setAge(30);
+        admin.setEmail("admin@email.com");
+        admin.setLastname("admin");
         admin.setPassword("admin");
         admin.setRoles(Set.of(adminRole));
         passwordEncoder.encode("admin");
@@ -37,6 +39,8 @@ public class DBInitialization {
         User user = new User();
         user.setUsername("user");
         user.setPassword("user");
+        user.setEmail("user@email.com");
+        user.setLastname("user");
         user.setRoles(Set.of(userRole));
         user.setAge(9);
         passwordEncoder.encode("user");

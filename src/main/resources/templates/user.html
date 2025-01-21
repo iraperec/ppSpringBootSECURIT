@@ -5,9 +5,11 @@
     <title>Profile page</title>
 </head>
 <body>
-<p th:text="${user.getUsername()}">VALUE</p>
-<p th:text="${user.getAge()}">VALUE</p>
 <p th:text="${user.getId()}">VALUE</p>
+<p th:text="${user.getUsername()}">VALUE</p>
+<p th:text="${user.getLastname()}">VALUE</p>
+<p th:text="${user.getAge()}">VALUE</p>
+<p th:text="${user.getEmail()}">VALUE</p>
 
 <form th:method="POST" th:action="@{/logout}">
     <button type="submit">Log out</button>

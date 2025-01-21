@@ -3,6 +3,7 @@ package com.iraperec.ppSpringBoot.controllers;
 import com.iraperec.ppSpringBoot.model.User;
 
 
+import com.iraperec.ppSpringBoot.service.RoleServiceImpl;
 import com.iraperec.ppSpringBoot.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserController {
 
     private final UserServiceImpl userService;
+
 
     @Autowired
     public UserController(UserServiceImpl userService) {
